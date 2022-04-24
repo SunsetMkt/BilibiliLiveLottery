@@ -36,7 +36,7 @@
     }),
     computed: {
       goalLegal: function () {
-        return this.stepNow===3 && this.goal>=this.uids.length;
+        return this.stepNow===3 && this.goal>this.uids.length;
       }
     },
     methods: {
