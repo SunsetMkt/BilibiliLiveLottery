@@ -6,7 +6,7 @@
         <v-card-text>所选抽取人数应小于参加观众人数</v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="green darken-1" text @click="goal = 1">确定</v-btn>
+          <v-btn color="green darken-1" text @click="goal = 0">确定</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -32,7 +32,7 @@
   export default {
     name: "Lottery",
     data: () => ({
-      goal: 1
+      goal: 0
     }),
     computed: {
       goalLegal: function () {
